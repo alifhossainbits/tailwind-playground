@@ -17,42 +17,53 @@
             Tom Gonzales home training <br />
             I'll get you in shape!
           </h1>
-          <h2 class="text-3xl">
+          <h2 class="">
             Muscle building • Functional training • Nutritional advice
           </h2>
         </div>
       </section>
       <!-- PICTURE -->
-      <section class="grid grid-cols-2 gap-10 mt-8" id="image-services">
+      <section
+        class="grid grid-cols-2 gap-4 mt-8 md:gap-10"
+        id="image-services"
+      >
         <div id="image" class="ml-auto">
           <img src="../dist/img/tom.jpg" alt="Tom Gonzales Online Training" />
         </div>
 
         <div id="services">
-          <h3 class="text-2xl">I offer you:</h3>
+          <h3 class="">I offer you:</h3>
           <ul class="ml-6 list-disc list-outside">
-            <li class="mb-4 text-xl text-xlhover:font-mono">
+            <li class="text-xlhover:font-mono">
               Lessons via Skype and you can record all sessions and watch them
               again later.
             </li>
-            <li class="mb-4 text-xl">Holistic full body training</li>
-            <li class="mb-4 text-xl">Training without equipment</li>
-            <li class="mb-4 text-xl">Pain reduction</li>
-            <li class="mb-4 text-xl">Tailored nutrition plans</li>
+            <li>Holistic full body training</li>
+            <li>Training without equipment</li>
+            <li>Pain reduction</li>
+            <li>Tailored nutrition plans</li>
           </ul>
-          <h3 class="mt-8 text-2xl">My qualifications:</h3>
-          <ul class="ml-6 list-disc list-outside">
-            <li class="mt-2 mb-4 text-xl">Certified nutritionist</li>
-            <li class="mb-4 text-xl">Certified fitness trainer</li>
-            <li class="mb-4 text-xl">5 years of experience in 1: 1 training</li>
+          <!-- hide before md, visible when md or greater -->
+          <h3 class="hidden mt-3 mb-3 md:mt-8 md:block">My qualifications:</h3>
+          <ul class="hidden ml-6 list-disc list-outside md:block">
+            <li>Certified nutritionist</li>
+            <li>Certified fitness trainer</li>
+            <li>5 years of experience in 1: 1 training</li>
           </ul>
         </div>
       </section>
 
+      <h3 class="block mt-3 mb-3 md:hidden md:mt-8">My qualifications:</h3>
+      <ul class="block ml-6 list-disc list-outside md:hidden">
+        <li>Certified nutritionist</li>
+        <li>Certified fitness trainer</li>
+        <li>5 years of experience in 1: 1 training</li>
+      </ul>
+
       <!-- PRICE AND PAYMENT -->
       <section class="mt-8 mb-10" id="price__payment">
         <div class="w-8/12 mx-auto">
-          <h2 class="text-3xl">Prices and payment</h2>
+          <h2 class="">Prices and payment</h2>
           <p>My most important goal is that you get ahead with your goals.</p>
           <p>
             In a free opening session we will discuss what you want to achieve
