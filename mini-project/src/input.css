@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Oswald;
+    src: url(../dist/font/Oswald-Bold.ttf);
+  }
+
+  h1 {
+    @apply text-5xl font-headline text-mainColor;
+  }
+  h2 {
+    @apply text-3xl font-headline text-mainColor;
+  }
+  h3 {
+    @apply text-2xl font-headline text-mainColor;
+  }
+  p {
+    @apply text-lg;
+  }
+}

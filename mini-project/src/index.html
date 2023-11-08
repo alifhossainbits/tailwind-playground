@@ -7,50 +7,52 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Document</title>
   </head>
-  <body class="bg-blue-800 debug-screens">
+  <body class="bg-mainColor debug-screens">
     <div class="container min-h-screen px-6 py-8 mx-auto bg-gray-100">
       <!-- PAGE HEADER -->
 
       <section id="header">
         <div class="text-center">
-          <h1>
+          <h1 class="mb-6">
             Tom Gonzales home training <br />
             I'll get you in shape!
           </h1>
-          <h2>Muscle building • Functional training • Nutritional advice</h2>
+          <h2 class="text-3xl">
+            Muscle building • Functional training • Nutritional advice
+          </h2>
         </div>
       </section>
       <!-- PICTURE -->
-      <section class="grid grid-cols-2 gap-4 mt-8" id="image-services">
-        <div id="image">
+      <section class="grid grid-cols-2 gap-10 mt-8" id="image-services">
+        <div id="image" class="ml-auto">
           <img src="../dist/img/tom.jpg" alt="Tom Gonzales Online Training" />
         </div>
 
         <div id="services">
-          <h3>I offer you:</h3>
-          <ul>
-            <li>
+          <h3 class="text-2xl">I offer you:</h3>
+          <ul class="ml-6 list-disc list-outside">
+            <li class="mb-4 text-xl text-xlhover:font-mono">
               Lessons via Skype and you can record all sessions and watch them
               again later.
             </li>
-            <li>Holistic full body training</li>
-            <li>Training without equipment</li>
-            <li>Pain reduction</li>
-            <li>Tailored nutrition plans</li>
+            <li class="mb-4 text-xl">Holistic full body training</li>
+            <li class="mb-4 text-xl">Training without equipment</li>
+            <li class="mb-4 text-xl">Pain reduction</li>
+            <li class="mb-4 text-xl">Tailored nutrition plans</li>
           </ul>
-          <h3>My qualifications:</h3>
-          <ul>
-            <li>Certified nutritionist</li>
-            <li>Certified fitness trainer</li>
-            <li>5 years of experience in 1: 1 training</li>
+          <h3 class="mt-8 text-2xl">My qualifications:</h3>
+          <ul class="ml-6 list-disc list-outside">
+            <li class="mt-2 mb-4 text-xl">Certified nutritionist</li>
+            <li class="mb-4 text-xl">Certified fitness trainer</li>
+            <li class="mb-4 text-xl">5 years of experience in 1: 1 training</li>
           </ul>
         </div>
       </section>
 
       <!-- PRICE AND PAYMENT -->
-      <section class="mt-8" id="price__payment">
+      <section class="mt-8 mb-10" id="price__payment">
         <div class="w-8/12 mx-auto">
-          <h2>Prices and payment</h2>
+          <h2 class="text-3xl">Prices and payment</h2>
           <p>My most important goal is that you get ahead with your goals.</p>
           <p>
             In a free opening session we will discuss what you want to achieve
@@ -65,7 +67,28 @@
         <div id="contact" class="grid w-8/12 grid-cols-2 gap-4 mx-auto">
           <div id="email" class="">
             <p>Your message:</p>
-            <a href="mailto:markusgonzales@gmail.com">Send an Email</a>
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 transition-all bg-gray-300 rounded-sm shadow-md w-max hover:bg-gray-400 hover:shadow-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-4 mr-1 feather feather-mail"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+
+              <span>Send an Email</span>
+            </a>
           </div>
 
           <div id="whatsApp_telefon" class="">
